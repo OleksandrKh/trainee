@@ -12,7 +12,7 @@ class App extends Component {
         <input type="text" ref={event => { this.trackInput = event }} />
         <button onClick={this.addTrack.bind(this)}>Add track</button>
         <ul>
-          {this.props.testStore.map((item, index) => {
+          {this.props.traks.map((item, index) => {
             return <li key={index}>{item}</li>
           })}
         </ul>
@@ -23,7 +23,7 @@ class App extends Component {
 
 export default connect(
   state => ({
-    testStore: state
+    traks: state.traks
   }),
   dispatch => ({
     onAddTrack: (trackName) => {
