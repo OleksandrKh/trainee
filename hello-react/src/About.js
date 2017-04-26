@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 
 import Menu from './Menu.js';
-import RegistrationForm from './RegistrationForm.js';
 
-import './App.css';
-
-class App extends Component {
+class About extends Component {
 	render() {
 		return (
 			<div className="container">
 				<Menu />
-				<RegistrationForm />
+				About Page!
 			</div>
 		)
 	}
 }
 
-export default App;
+export default About;
